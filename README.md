@@ -1,12 +1,14 @@
 # MAD_Practical-10_21012011049
 <b>Aim:</b> <br>
-Create an application to create JSON URL for Contact which have field(id, Name(First Name, Last Name), Phone No, Address) and should be minimum five contact details & display received contact data in RecyclerView. Add Google Map Activity which displays location which is received in JSON Data in google Maps activity and set the zoom level to 10.
-1.	Create MainActivity according to below UI design.
-2.	Use link generated from website for JSON Data
-3.	Create MapActivity.
-4.	Create Class Person with member Variables like id, Name, Phone No, Email Id, Address, Latitude, Longitude. This class should be inherited from Serializable class.
-5.	Generate JSON data format according to below image.
-6.	Use RecyclerView or ListView Adapter
-7.	Add Internet Permission in Manifest file
-8.	Create Class HttpRequest for communicating with Web URL
+Consider Android Application created in Practical-10 and add Sqlite feature such that it is storing data of persons which is received in JSON Format. There should be two buttons: after pressing first button then data of persons loads from sqlite database. After pressing second button, it receives data from network database in JSON format and loads data in ListView or RecyclerView.
+
+1.Create MainActivity according to below UI design. <br>
+2.Follow steps and Copy codes from Practical-10 <br>
+3.Create Class DatabaseHelper for Sqlite Database <br>
+4.Create class to store Companion Object for Sqlite database table name, column names. <br>
+5.Add some supported function in MainActivity for Sqlite database. <br>
+6.Add main_menu in menu folder of resource folder. <br>
+7.Add main_menu.xml file to toolbar of Activity as Option menu. <br>
+8.Add two buttons with vector icons. <br>
+9.Call appropriate method of mainactivity after pressing buttons of toolbar. <br>
 <h2>Output:</h2>
