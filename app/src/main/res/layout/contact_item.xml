@@ -70,7 +70,7 @@
 
             <TextView
                 android:id="@+id/address_textView"
-                android:layout_width="0dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:text="S-2, Someshwar Banglows, \nAhemdabad"
@@ -97,7 +97,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="4dp"
-                android:backgroundTint="#0000ff"
+                android:backgroundTint="#FF0015"
                 android:drawableTint="@color/white"
                 app:icon="@drawable/baseline_delete_24"
                 app:iconGravity="textStart"
