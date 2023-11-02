@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import java.util.ArrayList
 
-class PersonAdapter(val context:Context,  val Personarray : ArrayList<Person>):RecyclerView.Adapter<PersonAdapter.PersonViewHolder> (){
+class PersonAdapter(val context:MainActivity,  val Personarray : ArrayList<Person>):RecyclerView.Adapter<PersonAdapter.PersonViewHolder> (){
     inner class PersonViewHolder(val view: View): RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
@@ -30,6 +30,9 @@ class PersonAdapter(val context:Context,  val Personarray : ArrayList<Person>):R
         view.findViewById<MaterialButton>(R.id.location_btn).setOnClickListener {
             Intent(context, MapsActivity::class.java).putExtra("Object", Personarray[position])
                 .apply { context.startActivity(this) }
+        }
+        view.findViewById<MaterialButton>(R.id.delete_btn).setOnClickListener {
+            context.delete(holder.adapterPosition)
         }
     }
 }

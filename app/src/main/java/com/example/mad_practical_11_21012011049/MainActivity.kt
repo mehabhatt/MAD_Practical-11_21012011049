@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun getPersonDetailsFromJson(sJson: String?) {
-        val personList = ArrayList<Person>()
+
         val size = personList.size
         personList.clear()
         personRecyclerView.adapter?.notifyItemRangeRemoved(0,size)
@@ -109,7 +109,11 @@ class MainActivity : AppCompatActivity() {
         }
         Toast.makeText(this, "Fetched details from Sqlite database", Toast.LENGTH_SHORT).show()
     }
-
+    public fun delete(position:Int){
+        db.deletePerson(personList[position])
+        personList.removeAt(position)
+        personRecyclerView.adapter?.notifyItemRemoved(position)
+    }
 
 }
 

@@ -11,13 +11,13 @@ class PersonTable {
         val COLUMN_GPS_LAT = "Latitude"
         val COLUMN_GPS_LONG = "Longitude"
 
-        val CREATE_TABLE = ("CREATE TABLE" + TABLE_NAME + "(" +
-                COLUMN_ID + "TEXT PRIMARY KEY" +
-                COLUMN_NAME + "TEXT," +
-                COLUMN_PHONE + "TEXT," +
-                COLUMN_EMAIL + "TEXT," +
-                COLUMN_ADDRESS + "TEXT," +
-                COLUMN_GPS_LAT + "REAL" +
-                COLUMN_GPS_LONG + "REAL" + ")")
+        val CREATE_TABLE = ("CREATE TABLE " + TABLE_NAME + "(" +
+                COLUMN_ID + " TEXT PRIMARY KEY," +
+                COLUMN_NAME + " TEXT," +
+                COLUMN_PHONE + " TEXT," +
+                COLUMN_EMAIL + " TEXT," +
+                COLUMN_ADDRESS + " TEXT," +
+                COLUMN_GPS_LAT + " REAL," +
+                COLUMN_GPS_LONG + " REAL" + ")")
     }
 }
