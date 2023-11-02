@@ -89,9 +89,23 @@
                 app:icon="@drawable/baseline_location_on_24"
                 app:iconGravity="textStart"
                 app:iconSize="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete_btn"
+                style="?materialIconButtonFilledStyle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#0000ff"
+                android:drawableTint="@color/white"
+                app:icon="@drawable/baseline_delete_24"
+                app:iconGravity="textStart"
+                app:iconSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location_btn" />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
